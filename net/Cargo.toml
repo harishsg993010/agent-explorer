@@ -1,0 +1,10 @@
+[package]
+name = "net"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+reqwest = { workspace = true }
+thiserror = { workspace = true }
+lazy_static = { workspace = true }
+log = { workspace = true }

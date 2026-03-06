@@ -1,0 +1,14 @@
+[package]
+name = "dom"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+# Original HTML parsing (for JS bindings compatibility)
+html5ever = { workspace = true }
+markup5ever_rcdom = { workspace = true }
+# Enhanced DOM queries and markdown
+dom_query = { workspace = true }
+thiserror = { workspace = true }
+# CSS parsing for render filtering
+cssparser = { workspace = true }

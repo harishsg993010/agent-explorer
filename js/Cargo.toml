@@ -1,0 +1,33 @@
+[package]
+name = "js"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+boa_engine = { workspace = true }
+boa_gc = { workspace = true }
+dom = { workspace = true }
+markdown = { path = "../markdown" }
+thiserror = { workspace = true }
+log = { workspace = true }
+rusqlite = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+lazy_static = { workspace = true }
+tungstenite = { workspace = true }
+url = { workspace = true }
+reqwest = { workspace = true }
+cssparser = { workspace = true }
+flate2 = { workspace = true }
+
+# Cryptography
+sha1 = { workspace = true }
+sha2 = { workspace = true }
+hmac = { workspace = true }
+aes-gcm = { workspace = true }
+cbc = { workspace = true }
+aes = { workspace = true }
+pbkdf2 = { workspace = true }
+hkdf = { workspace = true }
+rand = { workspace = true }
+uuid = { workspace = true }

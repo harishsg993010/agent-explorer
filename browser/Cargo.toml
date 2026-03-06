@@ -1,0 +1,18 @@
+[package]
+name = "browser"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "semantic-browser"
+path = "src/main.rs"
+
+[dependencies]
+net = { workspace = true }
+dom = { workspace = true }
+js = { workspace = true }
+markdown = { workspace = true }
+anyhow = { workspace = true }
+env_logger = { workspace = true }
+log = { workspace = true }
+url = { workspace = true }
