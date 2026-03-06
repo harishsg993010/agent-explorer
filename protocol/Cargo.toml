@@ -1,0 +1,20 @@
+[package]
+name = "protocol"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "semantic-protocol"
+path = "src/main.rs"
+
+[dependencies]
+dom = { path = "../dom" }
+js = { path = "../js" }
+net = { path = "../net" }
+markdown = { path = "../markdown" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }
+thiserror = { workspace = true }
+url = { workspace = true }

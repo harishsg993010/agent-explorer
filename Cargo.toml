@@ -1,0 +1,81 @@
+[workspace]
+resolver = "2"
+members = [
+    "browser",
+    "net",
+    "dom",
+    "js",
+    "markdown",
+    "tui",
+    "protocol",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+rust-version = "1.75"
+
+[workspace.dependencies]
+# HTTP
+reqwest = { version = "0.12", features = ["blocking", "gzip", "brotli", "deflate", "cookies"] }
+
+# HTML parsing & DOM manipulation
+html5ever = "0.27"
+markup5ever_rcdom = "0.3"
+dom_query = { version = "0.24", features = ["markdown"] }
+
+# CSS parsing
+cssparser = "0.36"
+
+# JavaScript engine
+boa_engine = "0.21"
+boa_gc = "0.21"
+
+# Error handling
+thiserror = "2"
+anyhow = "1"
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Storage
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+lazy_static = "1.5"
+
+# Network/WebSocket
+tungstenite = "0.24"
+url = "2.5"
+
+# Compression
+flate2 = "1.0"
+
+# Cryptography
+sha1 = "0.10"
+sha2 = "0.10"
+hmac = "0.12"
+aes-gcm = "0.10"
+cbc = { version = "0.1", features = ["alloc"] }
+aes = "0.8"
+pbkdf2 = { version = "0.12", features = ["hmac"] }
+hkdf = "0.12"
+rand = "0.8"
+uuid = { version = "1.11", features = ["v4"] }
+getrandom = { version = "0.2", features = ["js"] }
+
+# TUI
+ratatui = "0.29"
+crossterm = "0.28"
+tokio = { version = "1", features = ["full"] }
+syntect = "5"
+
+# Internal crates
+net = { path = "net" }
+dom = { path = "dom" }
+js = { path = "js" }
+markdown = { path = "markdown" }
+tui = { path = "tui" }
+protocol = { path = "protocol" }

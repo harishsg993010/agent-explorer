@@ -1,0 +1,41 @@
+[package]
+name = "tui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+# TUI framework
+ratatui.workspace = true
+crossterm.workspace = true
+
+# Async runtime
+tokio.workspace = true
+
+# Syntax highlighting
+syntect.workspace = true
+
+# Browser engine integration
+net.workspace = true
+dom.workspace = true
+js.workspace = true
+markdown.workspace = true
+
+# Logging
+log.workspace = true
+
+# Serialization
+serde.workspace = true
+serde_json.workspace = true
+
+# URL handling
+url.workspace = true
+
+# Error handling
+anyhow.workspace = true
+thiserror.workspace = true
+
+[[bin]]
+name = "semantic-tui"
+path = "src/main.rs"
